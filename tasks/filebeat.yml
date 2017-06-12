@@ -1,0 +1,10 @@
+- name: Adds repository key
+  apt_key:
+    url: '{{ filebeat_repo_key }}'
+    state: present
+
+- name: Adds repos
+  apt_repository: repo="{{ filebeat_repo_path }}"
+
+- name: Installs filebeat
+  apt: pkg=filebeat state=present

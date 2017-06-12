@@ -1,0 +1,4 @@
+# Repo
+filebeat_repo_key: https://packages.elastic.co/GPG-KEY-elasticsearch
+filebeat_repo_path: "deb http://packages.elastic.co/beats/apt stable main"
+
